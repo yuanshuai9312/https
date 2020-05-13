@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link href="/content/index.css" rel="stylesheet" type="text/css">
+        <link href="/content/nprogress.css" rel="stylesheet" type="text/css">
+        <script src="/content/jquery-2.1.0.js" type="text/javascript"></script>
+        <script src="/content/index.js" type="text/javascript"></script>
+        <script src="/content/nprogress.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="txt">click:<input id="counter" type="text" value="0"/></div>
+        <h3>NProgress</h3>
+        <div>
+            <input type="button" id="b-0" value="NProgress.start()" /><br/>
+            <input type="button" id="b-40" value="NProgress.set(0.4)" /><br />
+            <input type="button" id="b-inc" value="NProgress.inc()" /><br />
+            <input type="button" id="b-100" value="NProgress.done()" /><br />
+        </div>
+        <h3>ajax</h3>
+        <div>
+            <input type="button" id="b-json" value="ajax:/api/values/time" /><br />
+            <textarea id="result-sleep" style="width: 300px;"></textarea><br />
+            <input type="button" id="b-sleep" value="ajax:/api/values/sleep?sleep=" />
+            <input type="text" id="txt-sleep" value="1" maxlength="1" style="width:30px;"/>
+            <br />
+        </div>
+    </body>
+</html>
+
+<script>
+    $('body').show();
+    //$('.version').text(NProgress.version);
+    NProgress.start();
+    setTimeout(function() {
+        NProgress.done();
+        //$('.fade').removeClass('out');
+    }, 1000);
+
+    function counter() {
+        var n = $('#counter').val();
+        $('#counter').val(++n);
+    }
+
+    $("#b-0").click(function () { NProgress.start();counter();});
+    $("#b-40").click(function () { NProgress.set(0.4); counter(); });
+    $("#b-inc").click(function () { NProgress.inc(); counter(); });
+    $("#b-100").click(function () { NProgress.done(); counter(); });
+    $("#b-json").click(function() {
+        $.get("/api/values/time",{id:"111"},
+            function (response, status, xhr) {
+                alert(JSON.stringify(response));
+            },"json");
+        counter();
+    });
+    $("#b-sleep").click(function () {
+        var txt = $("#txt-sleep");
+        
+        $.ajax({
+            url: "/api/values/sleep",
+            data: { sleep: txt.val()},
+            dataType: "json",
+            beforeSend: function () {
+                $("#b-0").click();
+                $('#result-sleep').html("请求中...");
+            },
+            success: function (data) {
+                //alert(JSON.stringify(data));
+                $('#result-sleep').html(JSON.stringify(data));
+            },
+            error: function (s, response, jqXHR, isSuccess) {
+                //alert(jqXHR);
+                $('#result-sleep').html("请求异常!");
+            },
+            complete: function () {
+                $("#b-100").click();
+            }
+        });
+        counter();
+
+        //增量测试
+        var n = parseInt(txt.val());
+        txt.val(n + 1);
+    });
+</script>

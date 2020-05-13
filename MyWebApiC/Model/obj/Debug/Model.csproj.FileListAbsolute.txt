@@ -1,0 +1,5 @@
+D:\Users\Administrator\source\repos\MyWebApiC\Model\bin\Debug\Model.dll
+D:\Users\Administrator\source\repos\MyWebApiC\Model\bin\Debug\Model.pdb
+D:\Users\Administrator\source\repos\MyWebApiC\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Users\Administrator\source\repos\MyWebApiC\Model\obj\Debug\Model.dll
+D:\Users\Administrator\source\repos\MyWebApiC\Model\obj\Debug\Model.pdb

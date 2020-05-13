@@ -1,0 +1,17 @@
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\bin\Debug\WebApi.dll
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\bin\Debug\WebApi.pdb
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\bin\Debug\Model.dll
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\bin\Debug\Newtonsoft.Json.dll
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\bin\Debug\System.Net.Http.Formatting.dll
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\bin\Debug\System.Web.Http.dll
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\bin\Debug\System.Web.Http.SelfHost.dll
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\bin\Debug\Model.pdb
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\bin\Debug\Newtonsoft.Json.xml
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\bin\Debug\System.Net.Http.Formatting.xml
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\bin\Debug\System.Web.Http.xml
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\bin\Debug\System.Web.Http.SelfHost.xml
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\obj\Debug\WebApi.csprojAssemblyReference.cache
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\obj\Debug\WebApi.csproj.CoreCompileInputs.cache
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\obj\Debug\WebApi.csproj.CopyComplete
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\obj\Debug\WebApi.dll
+D:\Users\Administrator\source\repos\MyWebApiC\WebApi\obj\Debug\WebApi.pdb

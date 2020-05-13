@@ -1,0 +1,11 @@
+D:\Users\Administrator\source\repos\MyWebApiC\Model\bin\Release\Model.dll
+D:\Users\Administrator\source\repos\MyWebApiC\Model\bin\Release\Model.pdb
+D:\Users\Administrator\source\repos\MyWebApiC\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
+D:\Users\Administrator\source\repos\MyWebApiC\Model\obj\Release\Model.dll
+D:\Users\Administrator\source\repos\MyWebApiC\Model\obj\Release\Model.pdb
+D:\http2\MyWebApiC\Model\bin\Release\Model.dll
+D:\http2\MyWebApiC\Model\bin\Release\Model.pdb
+D:\http2\MyWebApiC\Model\obj\Release\Model.csprojAssemblyReference.cache
+D:\http2\MyWebApiC\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
+D:\http2\MyWebApiC\Model\obj\Release\Model.dll
+D:\http2\MyWebApiC\Model\obj\Release\Model.pdb
